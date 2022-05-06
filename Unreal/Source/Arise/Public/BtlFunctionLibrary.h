@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include <CoreMinimal.h>
 #include "ArisePartyOrder.h"
 #include "BattleUIManager.h"
 #include "BtlCharacterBase.h"
@@ -11,11 +11,12 @@
 #include "BtlManager.h"
 #include "BtlStateManager.h"
 #include "Enums.h"
-#include "Camera/CameraShake.h"
-#include "Engine/DataTable.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "Materials/MaterialParameterCollection.h"
-#include "Particles/ParticleSystemComponent.h"
+#include <Camera/CameraShake.h>
+#include <Engine/DataTable.h>
+#include <Kismet/BlueprintFunctionLibrary.h>
+#include <Materials/MaterialParameterCollection.h>
+#include <Particles/ParticleSystemComponent.h>
+
 #include "BtlFunctionLibrary.generated.h"
 
 /**

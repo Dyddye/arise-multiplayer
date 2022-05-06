@@ -2,8 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include <CoreMinimal.h>
+#include <UObject/NoExportTypes.h>
+
 #include "BtlCommonViewModelBase.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FBattleViewModelDelegate);

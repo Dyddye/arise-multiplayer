@@ -51,4 +51,3 @@ UBtlActionQuery* UBtlActionProcessor::PlayGuardEnd()
 {
 	return nullptr;
 }
-

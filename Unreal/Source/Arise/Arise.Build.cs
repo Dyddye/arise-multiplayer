@@ -2,6 +2,7 @@
 
 using UnrealBuildTool;
 
+
 public class Arise : ModuleRules
 {
 	public Arise(ReadOnlyTargetRules Target) : base(Target)

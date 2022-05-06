@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include <CoreMinimal.h>
 #include "Enums.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ArisePartyOrder.generated.h"
 
 /**

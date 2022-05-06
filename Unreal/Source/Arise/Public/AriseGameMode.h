@@ -2,8 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "GameFramework/GameMode.h"
+#include <CoreMinimal.h>
+#include <GameFramework/GameMode.h>
+
 #include "AriseGameMode.generated.h"
 
 

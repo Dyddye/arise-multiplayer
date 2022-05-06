@@ -16,4 +16,3 @@ EPCOrder UBtlUnitLibrary::GetPartyOrder(ABtlCharacterBase* Actor)
 {
 	return {};
 }
-

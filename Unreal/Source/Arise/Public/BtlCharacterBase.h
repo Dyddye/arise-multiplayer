@@ -2,15 +2,15 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include <CoreMinimal.h>
+#include <GameFramework/Character.h>
 #include "Enums.h"
 #include "BtlActionProcessor.h"
 #include "BtlStatusComponent.h"
 #include "BtlStatusViewModelBase.h"
 #include "BtlUnitScriptComponent.h"
 #include "Btl_AIControllerBase.h"
-#include "Btl_Camera.h"
+
 #include "BtlCharacterBase.generated.h"
 
 class UBtlTargetCursorComponent;
@@ -87,7 +87,7 @@ public:
 	bool IsDead();
 	
 	UPROPERTY(BlueprintReadWrite)
-	/*UBtlStatusViewModelBase*/UBtlStatusViewModelBase* ViewModel;
+	UBtlStatusViewModelBase* ViewModel;
 	/*
 	
 	

@@ -1,6 +1,7 @@
 #pragma once
-#include "CoreMinimal.h"
-#include "ObjectMacros.h"
+
+#include <CoreMinimal.h>
+#include <ObjectMacros.h>
 
 
 UENUM(BlueprintType)

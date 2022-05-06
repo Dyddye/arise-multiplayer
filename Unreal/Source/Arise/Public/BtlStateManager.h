@@ -2,10 +2,11 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include <CoreMinimal.h>
 #include "BtlStateBase.h"
 #include "Enums.h"
-#include "UObject/NoExportTypes.h"
+#include <UObject/NoExportTypes.h>
+
 #include "BtlStateManager.generated.h"
 
 

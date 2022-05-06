@@ -113,5 +113,3 @@ int UArisePartyOrder::GetCompanionCount()
 void UArisePartyOrder::Clear()
 {
 }
-
-

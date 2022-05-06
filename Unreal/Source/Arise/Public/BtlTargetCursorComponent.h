@@ -2,10 +2,11 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include <CoreMinimal.h>
 #include "BtlCharacterBase.h"
 #include "Enums.h"
-#include "Components/SceneComponent.h"
+#include <Components/SceneComponent.h>
+
 #include "BtlTargetCursorComponent.generated.h"
 
 
