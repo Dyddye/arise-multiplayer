@@ -48,7 +48,7 @@ public:
 	}
 
 	static void Initialize() {
-		if (Instance == NULL) {
+		if (Instance == nullptr) {
 			Instance = new InputManager();
 		}
 	}
@@ -88,6 +88,13 @@ public:
 private:
 	InputManager() {
 		Input = SteamInput();
+
+		if (!Input)
+		{
+			Log::Warn("SteamInput not found!");
+			return;
+		}
+
 		GetConnectedControllers = (GetConnectedControllers_t)HookMethod((LPVOID)Input, (PVOID)GetConnectedControllersHook, 3 * 8);
 		ActivateActionSet = (ActivateActionSet_t)HookMethod((LPVOID)Input, (PVOID)ActivateActionSetHook, 5 * 8);
 		

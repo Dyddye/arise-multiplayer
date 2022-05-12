@@ -5,7 +5,7 @@
 
 #pragma intrinsic(_ReturnAddress)
 
-InputManager *InputManager::Instance = NULL;
+InputManager *InputManager::Instance = nullptr;
 GetConnectedControllers_t InputManager::GetConnectedControllers;
 ActivateActionSet_t InputManager::ActivateActionSet;
 
@@ -66,6 +66,9 @@ void InputManager::RemoveObsoleteControllers() {
 }
 
 void InputManager::Refresh(GamepadState gamepads[]) {
+	if (!Input)
+		return;
+
 	InputHandleCount = GetConnectedControllers(Input, InputHandles);
 	UpdateCounter++;
 	//for (int j = 0; j < InputHandleCount; j++) {
@@ -133,6 +136,7 @@ void InputManager::Refresh(GamepadState gamepads[]) {
 }
 
 bool InputManager::IsMenuPressed(int index) {
+	if (!Input) return false;
 	auto handle = GetControllerForIndex(index);
 	if (handle == 0) return false;
 
